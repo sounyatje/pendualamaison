@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'NarutoFont';
+    src: url('ninja-naruto (1)/naruto.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'NarutoFont', Arial, sans-serif;
+    background: url(konoha.webp) no-repeat center center/cover;
+}
+
+.pendu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 90vh;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    background: url(narutomaki-japanese-food-seamless-pattern-600nw-2195471231.webp) no-repeat center center/cover;
+    color: darkblue;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#pendu {
+    width: 100%;
+    height: 52.5vh; /* Augmenter cette valeur pour allonger la hauteur */
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+#mot-devine-container {
+    width: 100%;
+    padding: 10px 0;
+}
+
+#mot-devine {
+    font-size: 24px;
+    color: darkblue;
+    margin-bottom: 10px;
+}
+
+#image-container {
+    width: 90%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid darkblue;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#image-container img {
+    height: 70%;
+    width: 50%;
+    object-fit: cover;
+}
+
+.btns {
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    background-color: #f9d342;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    font-size: 20px;
+    color: darkblue;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'NarutoFont', Arial, sans-serif;
+}
+
+button:hover {
+    background-color: #ffff;
+    color: red;
+    border: 2px solid red;
+    transform: scale(1.2);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+button:disabled {
+    text-decoration: none;
+    cursor: not-allowed;
+    background-color: black;
+    border: 2px solid darkblue;
+    color: darkblue;
+    transform: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    color: darkblue;
+}
+
+.rejouer-score {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin: 10px;
+    color: darkblue;
+}
+
+
+
+#tentatives, #score,#perdu {
+    font-size: 24px;
+    color: darkblue;
+}
+
+#replay,#clear-score {
+    width: 40px;
+    height: 40px;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+h1 {
+    color: darkblue;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.naruto {
+    animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        color: red;
+    }
+    25% {
+        color: orange;
+    }
+    50% {
+        color: yellow;
+    }
+    75% {
+        color: blue;
+    }
+    100% {
+        color: red;
+    }
+}
+
+.uzumaki {position: absolute; left: 0; bottom: 0; }
+.uzumaki img{width: 400px; height: 400px;}
